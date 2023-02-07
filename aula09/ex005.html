@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=3, initial-scale=1.0">
+    <title>Primeiro passos com DOM</title>
+    <style>
+        body {
+            background-color: rgb(18, 132, 158);
+            color: white;
+            font: normal 15pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado </p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div id = "msg">clique em mim </div>
+    <script>
+        var corpo  = window.document.body
+        var p1 = window.document.getElementsByTagName('p') [1]
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = 'olá'
+
+      //  d.innerText = 'Estou aguardando...'
+      //   p1.style.color = 'blue'
+      //    corpo.style.background = 'black'
+      // document.write(p1.innerHTML) mostra o resultado na tela
+      // window.alert(p1.innerHTML) abe uma caixa de texto na tela, como um alerta e tem tambem o innerTEXT
+
+    </script>
+
+
+</body>
+</html>
